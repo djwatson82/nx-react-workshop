@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { RouteComponentProps } from 'react-router-dom';
 import styles from './game-detail.module.scss';
 
@@ -15,7 +15,7 @@ type TParams = { id: string };
 
 /* eslint-disable-next-line */
 export interface StoreFeatureGameDetailProps
-  extends RouteComponentProps<TParams> { }
+  extends RouteComponentProps<TParams> {}
 
 export const StoreFeatureGameDetail = (props: StoreFeatureGameDetailProps) => {
   const [state, setState] = useState<{
