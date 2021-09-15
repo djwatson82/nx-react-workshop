@@ -8,7 +8,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 
 export const App = () => {
-  console.log('foo bar');
+  console.log('foo bar baz');
 
   return (
     <div className={styles.container}>
