@@ -5,14 +5,14 @@ on: [pull_request] # This workflow will run only on Pull Requests
 jobs:
   test-affected:
     runs-on: ubuntu-latest
-    name: Test API
+    name: Test Affected
     steps:
       - uses: actions/checkout@v1
       - uses: bahmutov/npm-install@v1
       - run: npm run nx affected --target=test --base=origin/main --parallel
   lint-affected:
     runs-on: ubuntu-latest
-    name: Test API
+    name: Lint Affected
     steps:
       - uses: actions/checkout@v1
       - uses: bahmutov/npm-install@v1
@@ -20,7 +20,7 @@ jobs:
   
   e2e-affected:
     runs-on: ubuntu-latest
-    name: Test API
+    name: e2e Affected
     steps:
       - uses: actions/checkout@v1
       - uses: bahmutov/npm-install@v1
@@ -28,7 +28,7 @@ jobs:
       
   build-affected:
     runs-on: ubuntu-latest
-    name: Test API
+    name: Build Affected
     steps:
       - uses: actions/checkout@v1
       - uses: bahmutov/npm-install@v1
